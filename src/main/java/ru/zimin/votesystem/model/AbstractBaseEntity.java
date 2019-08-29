@@ -2,11 +2,12 @@ package ru.zimin.votesystem.model;
 
 import org.hibernate.Hibernate;
 import org.springframework.data.domain.Persistable;
+import ru.zimin.votesystem.HasId;
 
 import javax.persistence.*;
 
 @MappedSuperclass
-public abstract class AbstractBaseEntity implements Persistable<Integer> {
+public abstract class AbstractBaseEntity implements HasId {
     private static final int START_SEQ = 100000;
 
     @Id

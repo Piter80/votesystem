@@ -36,7 +36,7 @@ VALUES (1001, 'Кряк в собственном соку', 101),
        (1008, 'Eat and maybe die', 103),
        (1009, 'Eat and die', 103);
 
-INSERT INTO menus(id, menu, restaurant_id, dish_id, price)
+INSERT INTO menus(id, menudate, restaurant_id, dish_id, price)
 VALUES (10001, DATE '2019-7-1', 101, 1001, 101), -- 01.07.2019
        (10002, DATE '2019-7-1', 101, 1002, 211),
        (10003, DATE '2019-7-1', 101, 1003, 251),

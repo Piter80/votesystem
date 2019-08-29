@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class Menu extends AbstractBaseEntity {
 
     @Column(nullable = false)
-    LocalDate date;
+    LocalDate menuDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "restaurant_id")
@@ -36,24 +36,24 @@ public class Menu extends AbstractBaseEntity {
     }
 
     public Menu(Menu menu) {
-        this(menu.getId(), menu.getDate(), menu.getRestaurant(), menu.getDish(), menu.getPrice());
+        this(menu.getId(), menu.getMenuDate(), menu.getRestaurant(), menu.getDish(), menu.getPrice());
     }
 
-    public Menu(Integer id, LocalDate date, Restaurant restaurant, Dish dish, Integer price) {
+    public Menu(Integer id, LocalDate menuDate, Restaurant restaurant, Dish dish, Integer price) {
         super(id);
-        setDate(date);
+        setMenuDate(menuDate);
         this.restaurant = restaurant;
         this.dish = dish;
         this.price = price;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getMenuDate() {
+        return menuDate;
     }
 
-    public void setDate(LocalDate date) {
+    public void setMenuDate(LocalDate date) {
         if (date == null) date = LocalDate.now();
-        this.date = date;
+        this.menuDate = date;
     }
 
     public Restaurant getRestaurant() {
