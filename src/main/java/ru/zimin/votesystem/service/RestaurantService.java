@@ -56,9 +56,7 @@ public class RestaurantService {
     }
 
     public List<Restaurant> getAllForDay(LocalDate localDate) {
-        Comparator<Restaurant> comparator = Comparator.comparing(Restaurant::getId);
-        List<Restaurant> restaurants = repository.getAllForDay(Objects.requireNonNullElseGet(localDate, LocalDate::now));
-        return restaurants.stream().sorted(comparator).collect(Collectors.toList());
+        return repository.getAllForDay(Objects.requireNonNullElseGet(localDate, LocalDate::now));
     }
 
     public List<Restaurant> getAllForToday() {
