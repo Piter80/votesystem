@@ -3,6 +3,7 @@ package ru.zimin.votesystem.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
+import ru.zimin.votesystem.model.AbstractBaseEntity;
 import ru.zimin.votesystem.model.Restaurant;
 import ru.zimin.votesystem.repository.RestaurantRepository;
 import ru.zimin.votesystem.to.RestaurantTo;
@@ -10,8 +11,11 @@ import ru.zimin.votesystem.util.ToUtil;
 import ru.zimin.votesystem.util.exceptions.NotFoundException;
 
 import java.time.LocalDate;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import static ru.zimin.votesystem.util.ValidationUtil.checkNew;
 import static ru.zimin.votesystem.util.ValidationUtil.checkNotFoundWithId;
@@ -52,7 +56,9 @@ public class RestaurantService {
     }
 
     public List<Restaurant> getAllForDay(LocalDate localDate) {
-        return repository.getAllForDay(Objects.requireNonNullElseGet(localDate, LocalDate::now));
+        Comparator<Restaurant> comparator = Comparator.comparing(Restaurant::getId);
+        List<Restaurant> restaurants = repository.getAllForDay(Objects.requireNonNullElseGet(localDate, LocalDate::now));
+        return restaurants.stream().sorted(comparator).collect(Collectors.toList());
     }
 
     public List<Restaurant> getAllForToday() {

@@ -48,8 +48,8 @@
                 <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_SECOND_LEVEL_CACHE}" value="true"/>
                 <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_QUERY_CACHE}" value="false"/> <!--default-->
 
-                <entry key="javax.persistence.validation.group.pre-persist" value="ru.restaurant.voting.View$Persist"/>
-                <entry key="javax.persistence.validation.group.pre-update" value="ru.restaurant.voting.View$Persist"/>
+                <entry key="javax.persistence.validation.group.pre-persist" value="ru.zimin.votesystem.View$Persist"/>
+                <entry key="javax.persistence.validation.group.pre-update" value="ru.zimin.votesystem.View$Persist"/>
             </map>
         </property>
 
@@ -66,6 +66,6 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
           p:entityManagerFactory-ref="entityManagerFactory"/>
 
-    <!--<bean class="ru.zimin.votesystem.util.JpaUtil"/>-->
+    <bean class="ru.zimin.votesystem.util.JpaUtil"/>
 
 </beans>
