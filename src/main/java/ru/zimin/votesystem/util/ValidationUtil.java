@@ -1,12 +1,11 @@
 package ru.zimin.votesystem.util;
 
 import org.slf4j.Logger;
-import org.springframework.data.domain.Persistable;
-import ru.zimin.votesystem.model.AbstractBaseEntity;
+import ru.zimin.votesystem.HasId;
+import ru.zimin.votesystem.util.exceptions.ErrorType;
 import ru.zimin.votesystem.util.exceptions.IllegalRequestDataException;
 import ru.zimin.votesystem.util.exceptions.NotFoundException;
 
-import javax.lang.model.type.ErrorType;
 import javax.servlet.http.HttpServletRequest;
 
 public class ValidationUtil {
@@ -33,13 +32,13 @@ public class ValidationUtil {
         }
     }
 
-    public static void checkNew(AbstractBaseEntity bean) {
+    public static void checkNew(HasId bean) {
         if (!bean.isNew()) {
             throw new IllegalRequestDataException(bean + " must be new (id=null)");
         }
     }
 
-    public static void assureIdConsistent(AbstractBaseEntity bean, int id) {
+    public static void assureIdConsistent(HasId bean, int id) {
 //      conservative when you reply, but accept liberally (http://stackoverflow.com/a/32728226/548473)
         if (bean.isNew()) {
             bean.setId(id);

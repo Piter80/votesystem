@@ -1,0 +1,910 @@
+2019-09-02 12:07:01,176 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 12:07:01,218 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d131e1b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71cf1b07, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@615091b8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fce136b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4aa83f4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43b6123e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@260e86a1, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@19648c40]
+2019-09-02 12:07:01,753 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 12:07:01,895 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 - Finished Spring Data repository scanning in 128ms. Found 5 repository interfaces.
+2019-09-02 12:07:02,022 INFO  o.s.security.config.SecurityNamespaceHandler.<init>:78 - Spring Security 'config' module version is 5.1.4.RELEASE
+2019-09-02 12:07:02,053 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /admin/**
+2019-09-02 12:07:02,054 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAnonymous()' for /profile/register
+2019-09-02 12:07:02,055 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAuthenticated()' for /**
+2019-09-02 12:07:02,145 INFO  o.s.s.config.http.HttpSecurityBeanDefinitionParser.checkFilterChainOrder:307 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2019-09-02 12:07:03,155 INFO  org.ehcache.core.EhcacheManager.createCache:307 - Cache 'restaurants' created in EhcacheManager.
+2019-09-02 12:07:03,184 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/restaurants/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 12:07:03,194 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/restaurants/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 12:07:03,290 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-09-02 12:07:03,373 INFO  org.hibernate.Version.logVersion:46 - HHH000412: Hibernate Core {5.4.1.Final}
+2019-09-02 12:07:03,557 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-02 12:07:04,151 INFO  org.hibernate.dialect.Dialect.<init>:158 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-09-02 12:07:04,575 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.15.Final
+2019-09-02 12:07:05,307 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-02 12:07:05,309 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 12:07:06,296 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-02 12:07:06,301 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/index.html'], []
+2019-09-02 12:07:06,479 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: any request, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1abea1ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37b5a51c, org.springframework.security.web.header.HeaderWriterFilter@347f8029, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4fd00e10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f2497d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56226064, org.springframework.security.web.access.ExceptionTranslationFilter@7f20dfd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69b80603]
+2019-09-02 12:07:06,762 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,126 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,161 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,208 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,280 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,300 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,325 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,374 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,393 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,410 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,425 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,431 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,441 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,456 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 12:07:07,459 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: DISHES_UNIQUE_RESTAURANTID_DISHNAME_IDX
+2019-09-02 12:07:07,461 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 12:07:07,462 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,489 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,493 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,527 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,537 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,573 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,576 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,594 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,599 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 12:07:07,601 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 12:07:07,602 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,606 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of DishServiceTest': running time (millis) = 536
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00364  068 %  create()
+00047  009 %  delete()
+00013  002 %  getAll()
+00049  009 %  update()
+00016  003 %  get()
+00005  001 %  updateNotRestaurantDish()
+00020  004 %  duplicateCreate()
+00003  001 %  getNotRestaurantsDish()
+00010  002 %  getAllForRestaurant()
+00002  000 %  createNotNew()
+00007  001 %  deleteNotRestaurantDish()
+
+
+2019-09-02 12:07:07,609 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 12:07:07,611 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@46ef7340, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@75caecf7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@62b0792, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2fd409c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@121c1a08, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3013e1e8, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6e5a77ef, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@61cff1e4]
+2019-09-02 12:07:07,673 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,756 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 12:07:07,757 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 12:07:07,759 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 12:07:07,794 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,814 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,853 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,873 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,887 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,895 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,912 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,922 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,943 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,959 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,971 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:07,989 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:07,995 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,012 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,025 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,036 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,049 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 12:07:08,061 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 12:07:08,063 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,078 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,089 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,105 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,111 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,147 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,187 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 12:07:08,190 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 12:07:08,191 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 12:07:08,192 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,200 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,205 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,208 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of MenuServiceTest': running time (millis) = 305
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00119  039 %  updateWithAlreadyExistingMenuInThisDay()
+00038  012 %  create()
+00013  004 %  delete()
+00016  005 %  getAll()
+00020  007 %  update()
+00012  004 %  getAllForDay()
+00005  002 %  getAllForDayByRestaurantId()
+00004  001 %  getNotFound()
+00018  006 %  deleteNotFound()
+00011  004 %  deleteAll()
+00005  002 %  get()
+00039  013 %  duplicateCreate()
+00005  002 %  getAllForRestaurant()
+
+
+2019-09-02 12:07:08,212 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 12:07:08,213 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@69346100, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@16a14076, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@65293ca5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d70e68b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2786b644, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b38f032, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@17d83fe4, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7d76d72a]
+2019-09-02 12:07:08,295 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,309 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 12:07:08,311 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: RESTAURANTS_UNIQUE_NAME_IDX
+2019-09-02 12:07:08,312 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 12:07:08,316 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,324 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,329 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,358 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,390 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,400 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,405 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,413 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,428 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,445 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,459 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,479 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,490 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,497 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,501 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 12:07:08,502 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 12:07:08,503 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,509 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,514 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,520 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,540 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,546 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,555 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,567 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,579 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,580 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of RestaurantServiceTest': running time (millis) = 135
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00016  012 %  duplicateNameCreate()
+00005  004 %  create()
+00031  023 %  delete()
+00004  003 %  getAll()
+00015  011 %  update()
+00013  010 %  getAllForDay()
+00007  005 %  getNotFound()
+00005  004 %  deleteNotFound()
+00005  004 %  get()
+00019  014 %  getForDay()
+00004  003 %  getAllForEmptyDay()
+00011  008 %  getForDayNotFound()
+
+
+2019-09-02 12:07:08,590 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 12:07:08,591 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@195888a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ced7cf, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@580c4c0b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@604e8a6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5bc44d78, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f408960, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1516f497, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@34766f4b]
+2019-09-02 12:07:08,617 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,771 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,776 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,798 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,804 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,808 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,815 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:08,915 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:08,920 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,038 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 3 и 50', propertyPath=name, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 12:07:09,126 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='email определен в неверном формате', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Email.message}'}
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 12:07:09,129 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+]]
+2019-09-02 12:07:09,130 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,137 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,144 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,154 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,161 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,168 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,170 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 12:07:09,170 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 12:07:09,171 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,175 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,189 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,194 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,285 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 12:07:09,285 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2019-09-02 12:07:09,286 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 12:07:09,286 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,287 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of UserServiceTest': running time (millis) = 608
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00154  025 %  create()
+00021  003 %  delete()
+00003  000 %  getAll()
+00099  016 %  update()
+00210  035 %  testValidation()
+00006  001 %  getNotFound()
+00006  001 %  get()
+00003  000 %  deletedNotFound()
+00014  002 %  getByEmail()
+00092  015 %  duplicateMailCreate()
+
+
+2019-09-02 12:07:09,290 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 12:07:09,294 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a388769, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3054cdd3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@755a4ef5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6eff05e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1002c49e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62eb918, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@21a462ce, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@37e28b20]
+2019-09-02 12:07:09,311 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,340 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,344 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,359 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,371 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,384 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,392 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,427 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,444 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,453 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,459 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,465 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,471 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 12:07:09,488 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 12:07:09,508 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of VoteServiceTest': running time (millis) = 118
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00028  024 %  voteFirstTimeBefore11()
+00014  012 %  voteSecondTimeAfter11()
+00012  010 %  voteFirstTimeAfter11()
+00034  029 %  voteSecondTimeBefore11()
+00008  007 %  get()
+00005  004 %  getAllForDateForUser()
+00017  014 %  getAllForDate()
+
+
+2019-09-02 12:07:09,545 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 12:07:09,572 INFO  org.ehcache.core.EhcacheManager.removeCache:218 - Cache 'restaurants' removed from EhcacheManager.
+2019-09-02 14:11:12,756 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:11:12,788 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d131e1b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71cf1b07, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@615091b8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fce136b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4aa83f4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43b6123e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@260e86a1, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@19648c40]
+2019-09-02 14:11:13,375 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 14:11:13,544 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 - Finished Spring Data repository scanning in 151ms. Found 5 repository interfaces.
+2019-09-02 14:11:13,707 INFO  o.s.security.config.SecurityNamespaceHandler.<init>:78 - Spring Security 'config' module version is 5.1.4.RELEASE
+2019-09-02 14:11:13,759 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /admin/**
+2019-09-02 14:11:13,761 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAnonymous()' for /profile/register
+2019-09-02 14:11:13,762 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAuthenticated()' for /**
+2019-09-02 14:11:13,880 INFO  o.s.s.config.http.HttpSecurityBeanDefinitionParser.checkFilterChainOrder:307 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2019-09-02 14:11:15,042 INFO  org.ehcache.core.EhcacheManager.createCache:307 - Cache 'restaurants' created in EhcacheManager.
+2019-09-02 14:11:15,069 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/restaurants/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 14:11:15,087 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/restaurants/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 14:11:15,210 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-09-02 14:11:15,328 INFO  org.hibernate.Version.logVersion:46 - HHH000412: Hibernate Core {5.4.1.Final}
+2019-09-02 14:11:15,562 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-02 14:11:16,089 INFO  org.hibernate.dialect.Dialect.<init>:158 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-09-02 14:11:16,609 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.15.Final
+2019-09-02 14:11:17,450 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-02 14:11:17,457 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 14:11:18,547 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-02 14:11:18,556 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/index.html'], []
+2019-09-02 14:11:18,772 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: any request, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1abea1ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37b5a51c, org.springframework.security.web.header.HeaderWriterFilter@347f8029, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4fd00e10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f2497d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56226064, org.springframework.security.web.access.ExceptionTranslationFilter@7f20dfd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69b80603]
+2019-09-02 14:11:19,090 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,470 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,493 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,541 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,560 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,574 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,588 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,659 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,684 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,691 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,781 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,788 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,816 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,846 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:11:19,849 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: DISHES_UNIQUE_RESTAURANTID_DISHNAME_IDX
+2019-09-02 14:11:19,851 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:11:19,860 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,885 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,889 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,920 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,924 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,950 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,952 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,965 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:19,969 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:11:19,969 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:11:19,970 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:19,983 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of DishServiceTest': running time (millis) = 569
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00379  067 %  create()
+00047  008 %  delete()
+00013  002 %  getAll()
+00062  011 %  update()
+00006  001 %  get()
+00006  001 %  updateNotRestaurantDish()
+00043  008 %  duplicateCreate()
+00003  001 %  getNotRestaurantsDish()
+00004  001 %  getAllForRestaurant()
+00002  000 %  createNotNew()
+00004  001 %  deleteNotRestaurantDish()
+
+
+2019-09-02 14:11:19,988 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:11:19,989 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@46ef7340, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@75caecf7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@62b0792, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2fd409c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@121c1a08, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3013e1e8, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6e5a77ef, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@61cff1e4]
+2019-09-02 14:11:20,014 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,130 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:11:20,140 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 14:11:20,141 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:11:20,147 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,185 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,224 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,308 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,374 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,404 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,427 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,479 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,515 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,533 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,544 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,560 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,600 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,677 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,685 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,695 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,697 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:11:20,699 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:11:20,704 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,713 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,719 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,726 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,730 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,736 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,755 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:11:20,756 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 14:11:20,757 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:11:20,758 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,769 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,782 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,785 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of MenuServiceTest': running time (millis) = 394
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00132  034 %  updateWithAlreadyExistingMenuInThisDay()
+00038  010 %  create()
+00062  016 %  delete()
+00023  006 %  getAll()
+00035  009 %  update()
+00010  003 %  getAllForDay()
+00037  009 %  getAllForDayByRestaurantId()
+00006  002 %  getNotFound()
+00009  002 %  deleteNotFound()
+00005  001 %  deleteAll()
+00003  001 %  get()
+00021  005 %  duplicateCreate()
+00013  003 %  getAllForRestaurant()
+
+
+2019-09-02 14:11:20,795 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:11:20,796 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@17d83fe4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d76d72a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6fd07a56, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1315befe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45649467, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e60c466, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@620e0d36, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5cd2adc7]
+2019-09-02 14:11:20,861 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,865 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:11:20,868 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: RESTAURANTS_UNIQUE_NAME_IDX
+2019-09-02 14:11:20,881 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:11:20,887 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,916 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,921 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:20,929 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:20,983 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,014 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,071 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,086 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,101 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,147 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,164 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,174 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,182 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,190 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,192 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:11:21,193 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:11:21,193 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,199 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,214 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,223 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,246 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,270 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,281 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,302 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,314 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,322 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of RestaurantServiceTest': running time (millis) = 228
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00025  011 %  duplicateNameCreate()
+00005  002 %  create()
+00054  024 %  delete()
+00046  020 %  getAll()
+00014  006 %  update()
+00015  007 %  getAllForDay()
+00008  004 %  getNotFound()
+00003  001 %  deleteNotFound()
+00015  007 %  get()
+00023  010 %  getForDay()
+00010  004 %  getAllForEmptyDay()
+00010  004 %  getForDayNotFound()
+
+
+2019-09-02 14:11:21,327 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:11:21,329 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@604e8a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bc44d78, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f408960, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1516f497, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34766f4b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d204b30, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6600d07d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@44103266]
+2019-09-02 14:11:21,345 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,598 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,603 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,629 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,636 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,643 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,651 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,784 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:21,789 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:21,896 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 3 и 50', propertyPath=name, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 14:11:22,003 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+	ConstraintViolationImpl{interpolatedMessage='email определен в неверном формате', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Email.message}'}
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+]]
+2019-09-02 14:11:22,007 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 14:11:22,008 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,012 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,018 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,024 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,031 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,037 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,039 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:11:22,040 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:11:22,041 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,045 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,055 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,063 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,157 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:11:22,159 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2019-09-02 14:11:22,161 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:11:22,162 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,164 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of UserServiceTest': running time (millis) = 761
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00253  033 %  create()
+00026  003 %  delete()
+00006  001 %  getAll()
+00132  017 %  update()
+00218  029 %  testValidation()
+00006  001 %  getNotFound()
+00007  001 %  get()
+00004  001 %  deletedNotFound()
+00010  001 %  getByEmail()
+00099  013 %  duplicateMailCreate()
+
+
+2019-09-02 14:11:22,166 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:11:22,167 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@755a4ef5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6eff05e7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1002c49e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62eb918, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21a462ce, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@37e28b20, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@31428f76, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4257163f]
+2019-09-02 14:11:22,175 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,194 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,198 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,222 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,226 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,238 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,243 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,271 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,279 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,288 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,303 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,313 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,320 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:11:22,331 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:11:22,334 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of VoteServiceTest': running time (millis) = 109
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00019  017 %  voteFirstTimeBefore11()
+00024  022 %  voteSecondTimeAfter11()
+00011  010 %  voteFirstTimeAfter11()
+00027  025 %  voteSecondTimeBefore11()
+00008  007 %  get()
+00010  009 %  getAllForDateForUser()
+00010  009 %  getAllForDate()
+
+
+2019-09-02 14:11:22,375 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 14:11:22,389 INFO  org.ehcache.core.EhcacheManager.removeCache:218 - Cache 'restaurants' removed from EhcacheManager.
+2019-09-02 14:55:10,451 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:55:10,470 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@260e86a1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19648c40, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12bd8a64, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61e94def, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3300f4fd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ebb6851, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@70ab2d48, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5b068087]
+2019-09-02 14:55:10,545 INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:316 - Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2019-09-02 14:55:10,732 INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:316 - Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2019-09-02 14:55:10,949 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 14:55:11,102 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 - Finished Spring Data repository scanning in 136ms. Found 5 repository interfaces.
+2019-09-02 14:55:11,122 INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:316 - Loading XML bean definitions from class path resource [spring/spring-tools.xml]
+2019-09-02 14:55:11,153 INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:316 - Loading XML bean definitions from class path resource [spring/spring-security.xml]
+2019-09-02 14:55:11,224 INFO  o.s.security.config.SecurityNamespaceHandler.<init>:78 - Spring Security 'config' module version is 5.0.5.RELEASE
+2019-09-02 14:55:11,259 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'hasRole('ROLE_ADMIN')' for /admin/**
+2019-09-02 14:55:11,259 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAnonymous()' for /profile/register
+2019-09-02 14:55:11,260 INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser.parseInterceptUrlsForFilterInvocationRequestMap:194 - Creating access control expression attribute 'isAuthenticated()' for /**
+2019-09-02 14:55:11,360 INFO  o.s.s.config.http.HttpSecurityBeanDefinitionParser.checkFilterChainOrder:307 - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2400]
+2019-09-02 14:55:11,457 INFO  o.s.context.support.GenericApplicationContext.prepareRefresh:590 - Refreshing org.springframework.context.support.GenericApplicationContext@3ecd267f: startup date [Mon Sep 02 14:55:11 MSK 2019]; root of context hierarchy
+2019-09-02 14:55:12,576 INFO  org.ehcache.core.EhcacheManager.createCache:307 - Cache 'restaurants' created in EhcacheManager.
+2019-09-02 14:55:12,611 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/votesystem/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 14:55:12,624 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:378 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./IdeaProjects/votes/votesystem/target/classes/cache/ehcache.xml,Cache=restaurants
+2019-09-02 14:55:12,655 INFO  o.s.jdbc.datasource.DriverManagerDataSource.setDriverClassName:133 - Loaded JDBC driver: org.hsqldb.jdbcDriver
+2019-09-02 14:55:12,682 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-09-02 14:55:12,702 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-09-02 14:55:12,775 INFO  org.hibernate.Version.logVersion:46 - HHH000412: Hibernate Core {5.4.1.Final}
+2019-09-02 14:55:12,992 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-02 14:55:13,458 INFO  org.hibernate.dialect.Dialect.<init>:158 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-09-02 14:55:13,868 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.0.15.Final
+2019-09-02 14:55:14,656 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-02 14:55:14,659 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 14:55:15,659 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/initDB.sql]
+2019-09-02 14:55:16,171 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/initDB.sql] in 7 ms.
+2019-09-02 14:55:16,172 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:16,198 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 26 ms.
+2019-09-02 14:55:16,239 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/resources/**'], []
+2019-09-02 14:55:16,247 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: Ant [pattern='/index.html'], []
+2019-09-02 14:55:16,583 INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@267b678f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f78a5ed, org.springframework.security.web.header.HeaderWriterFilter@9fd3b61, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24749ad3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79aba813, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f2ab6ec, org.springframework.security.web.access.ExceptionTranslationFilter@7f958d4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43b74979]
+2019-09-02 14:55:16,880 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:16,889 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 8 ms.
+2019-09-02 14:55:16,892 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,302 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,335 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,380 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 40 ms.
+2019-09-02 14:55:17,381 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,433 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,495 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,515 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 18 ms.
+2019-09-02 14:55:17,516 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,526 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,532 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,555 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 23 ms.
+2019-09-02 14:55:17,556 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,581 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,665 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,686 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 20 ms.
+2019-09-02 14:55:17,686 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,720 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,729 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,735 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 5 ms.
+2019-09-02 14:55:17,737 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,750 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,757 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,770 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 12 ms.
+2019-09-02 14:55:17,772 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,791 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:55:17,791 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: DISHES_UNIQUE_RESTAURANTID_DISHNAME_IDX
+2019-09-02 14:55:17,793 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:55:17,794 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,800 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,805 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:17,807 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,810 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,818 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,824 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 5 ms.
+2019-09-02 14:55:17,838 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,845 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,850 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,866 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 16 ms.
+2019-09-02 14:55:17,868 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:17,871 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:17,884 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:17,989 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 39 ms.
+2019-09-02 14:55:17,998 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,005 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:55:18,005 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:55:18,019 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,028 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of DishServiceTest': running time (millis) = 589
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00409  069 %  create()
+00051  009 %  delete()
+00010  002 %  getAll()
+00024  004 %  update()
+00033  006 %  get()
+00013  002 %  updateNotRestaurantDish()
+00020  003 %  duplicateCreate()
+00003  001 %  getNotRestaurantsDish()
+00005  001 %  getAllForRestaurant()
+00003  001 %  createNotNew()
+00018  003 %  deleteNotRestaurantDish()
+
+
+2019-09-02 14:55:18,037 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:55:18,039 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30bfdcc5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e9b0c92, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5bfeb9ba, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cf1bd4a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@26619e5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@445f6aa7, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6a4238ff, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2b98c310]
+2019-09-02 14:55:18,044 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,054 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 9 ms.
+2019-09-02 14:55:18,055 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,169 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:55:18,171 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 14:55:18,172 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:55:18,174 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,182 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,210 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 25 ms.
+2019-09-02 14:55:18,250 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,290 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,296 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,307 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 11 ms.
+2019-09-02 14:55:18,309 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,351 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,357 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,363 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 5 ms.
+2019-09-02 14:55:18,365 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,377 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,381 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,385 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,386 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,398 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,401 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,405 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,406 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,417 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,420 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,424 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:18,424 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,428 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,430 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,433 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:18,434 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,438 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,442 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,450 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:18,453 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,456 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:55:18,458 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:55:18,458 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,461 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,465 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:18,466 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,474 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,481 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,485 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:18,487 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,493 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,503 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,527 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 22 ms.
+2019-09-02 14:55:18,527 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,533 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:55:18,534 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: MENUS_UNIQUE_MENU_RESTAURANTID_DISHID_IDX
+2019-09-02 14:55:18,535 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:55:18,536 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,539 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,542 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,545 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,613 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,618 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of MenuServiceTest': running time (millis) = 312
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00119  038 %  updateWithAlreadyExistingMenuInThisDay()
+00022  007 %  create()
+00041  013 %  delete()
+00010  003 %  getAll()
+00012  004 %  update()
+00010  003 %  getAllForDay()
+00003  001 %  getAllForDayByRestaurantId()
+00004  001 %  getNotFound()
+00005  002 %  deleteNotFound()
+00007  002 %  deleteAll()
+00005  002 %  get()
+00008  003 %  duplicateCreate()
+00066  021 %  getAllForRestaurant()
+
+
+2019-09-02 14:55:18,635 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:55:18,636 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@155767a7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5418a659, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@46067a74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d26c6a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@362e6fe, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1259b2a5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6779af40, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7cf166db]
+2019-09-02 14:55:18,645 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,653 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 7 ms.
+2019-09-02 14:55:18,659 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,667 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:55:18,668 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: RESTAURANTS_UNIQUE_NAME_IDX
+2019-09-02 14:55:18,669 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:55:18,710 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,717 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,724 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 5 ms.
+2019-09-02 14:55:18,726 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,731 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,734 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,738 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,739 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,759 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,762 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,765 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,766 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,770 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,779 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,784 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:18,785 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,796 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,801 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,931 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 128 ms.
+2019-09-02 14:55:18,933 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,959 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:18,971 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:18,974 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:18,977 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:18,984 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,001 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,004 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:19,006 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,018 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:55:19,019 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:55:19,020 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,037 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,046 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 5 ms.
+2019-09-02 14:55:19,047 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,071 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,076 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,080 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:19,081 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,088 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,092 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,124 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 32 ms.
+2019-09-02 14:55:19,130 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,256 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,266 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,591 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 321 ms.
+2019-09-02 14:55:19,595 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,610 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,612 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of RestaurantServiceTest': running time (millis) = 299
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00050  017 %  duplicateNameCreate()
+00005  002 %  create()
+00019  006 %  delete()
+00004  001 %  getAll()
+00010  003 %  update()
+00025  008 %  getAllForDay()
+00006  002 %  getNotFound()
+00013  004 %  deleteNotFound()
+00024  008 %  get()
+00006  002 %  getForDay()
+00126  042 %  getAllForEmptyDay()
+00011  004 %  getForDayNotFound()
+
+
+2019-09-02 14:55:19,617 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:55:19,618 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19a4cdea, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@434a2a10, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6debf1b8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@701da311, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4fe9fb65, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5de14222, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6fb51e17, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@722d3ddb]
+2019-09-02 14:55:19,626 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,690 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 63 ms.
+2019-09-02 14:55:19,695 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,917 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,922 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,924 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:19,925 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,954 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,956 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,960 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:19,961 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:19,968 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:19,971 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:19,975 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:19,978 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,071 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,073 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,076 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 1 ms.
+2019-09-02 14:55:20,077 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,191 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 3 и 50', propertyPath=name, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 14:55:20,275 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='email определен в неверном формате', propertyPath=email, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Email.message}'}
+]]
+2019-09-02 14:55:20,279 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [Validation failed for classes [ru.zimin.votesystem.model.User] during persist time for groups [ru.zimin.votesystem.View$Persist, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='не может быть пусто', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='размер должен быть между 5 и 100', propertyPath=password, rootBeanClass=class ru.zimin.votesystem.model.User, messageTemplate='{javax.validation.constraints.Size.message}'}
+]]
+2019-09-02 14:55:20,280 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,284 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,286 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:20,287 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,290 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,298 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,300 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:20,301 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,305 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,309 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,313 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:20,316 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,321 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:230 - SQL Warning Code: -1100, SQLState: 02000
+2019-09-02 14:55:20,322 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logWarning:231 - no data
+2019-09-02 14:55:20,322 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,325 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,327 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:20,328 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,337 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,340 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,342 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:20,343 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,492 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2019-09-02 14:55:20,492 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2019-09-02 14:55:20,493 ERROR org.hibernate.internal.ExceptionMapperStandardImpl.mapManagedFlushFailure:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2019-09-02 14:55:20,493 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,494 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of UserServiceTest': running time (millis) = 723
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00221  031 %  create()
+00029  004 %  delete()
+00007  001 %  getAll()
+00092  013 %  update()
+00203  028 %  testValidation()
+00003  000 %  getNotFound()
+00004  001 %  get()
+00005  001 %  deletedNotFound()
+00009  001 %  getByEmail()
+00150  021 %  duplicateMailCreate()
+
+
+2019-09-02 14:55:20,496 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2019-09-02 14:55:20,497 INFO  o.s.t.c.support.DefaultTestContextBootstrapper.getTestExecutionListeners:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f5fb335, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@715d82a0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@299cddbf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31beb0d0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13da6bc9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e8fb390, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4131f6db, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@5cdf61d]
+2019-09-02 14:55:20,510 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,522 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 10 ms.
+2019-09-02 14:55:20,524 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,541 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,546 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,548 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 1 ms.
+2019-09-02 14:55:20,549 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,562 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,570 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,573 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:20,574 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,587 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,595 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,598 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 2 ms.
+2019-09-02 14:55:20,599 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,625 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,630 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,634 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 3 ms.
+2019-09-02 14:55:20,636 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,646 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,653 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,662 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 6 ms.
+2019-09-02 14:55:20,665 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,677 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,679 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:444 - Executing SQL script from class path resource [db/populateDB.sql]
+2019-09-02 14:55:20,684 INFO  o.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript:510 - Executed SQL script from class path resource [db/populateDB.sql] in 4 ms.
+2019-09-02 14:55:20,684 INFO  result.beforeTestExecution:22 - Start stopWatch
+2019-09-02 14:55:20,743 INFO  result.afterTestExecution:29 - stop stopWatch
+2019-09-02 14:55:20,749 INFO  result.afterAll:34 - 
+StopWatch 'Execution time of VoteServiceTest': running time (millis) = 146
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00016  011 %  voteFirstTimeBefore11()
+00013  009 %  voteSecondTimeAfter11()
+00012  008 %  voteFirstTimeAfter11()
+00026  018 %  voteSecondTimeBefore11()
+00010  007 %  get()
+00011  008 %  getAllForDateForUser()
+00058  040 %  getAllForDate()
+
+
+2019-09-02 14:55:20,875 INFO  o.s.context.support.GenericApplicationContext.doClose:993 - Closing org.springframework.context.support.GenericApplicationContext@3ecd267f: startup date [Mon Sep 02 14:55:11 MSK 2019]; root of context hierarchy
+2019-09-02 14:55:20,889 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 14:55:20,921 INFO  org.ehcache.core.EhcacheManager.removeCache:218 - Cache 'restaurants' removed from EhcacheManager.

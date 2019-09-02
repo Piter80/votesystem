@@ -34,14 +34,14 @@
         </mvc:argument-resolvers>
     </mvc:annotation-driven>
 
-    <!--<bean class="org.springframework.format.support.FormattingConversionServiceFactoryBean" id="conversionService">
+    <bean class="org.springframework.format.support.FormattingConversionServiceFactoryBean" id="conversionService">
         <property name="formatters">
             <set>
-                <bean class="ru.zimin.votesystem.web.converter.DateTimeFormatters.LocalTimeFormatter"/>
-                <bean class="ru.zimin.votesystem.web.converter.DateTimeFormatters.LocalDateFormatter"/>
+                <bean class="ru.zimin.votesystem.web.util.DateTimeFormatters.LocalTimeFormatter"/>
+                <bean class="ru.zimin.votesystem.web.util.DateTimeFormatters.LocalDateFormatter"/>
             </set>
         </property>
-    </bean>-->
+    </bean>
 
     <context:component-scan base-package="ru.zimin.**.web"/>
 
